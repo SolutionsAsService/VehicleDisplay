@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Vehicle Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>3D Vehicle Viewer</h1>
+        <p>Select a vehicle to view:</p>
+
+        <!-- Buttons to select different vehicles -->
+        <div id="vehicle-selector">
+            <button onclick="loadModel('car')">Car</button>
+            <button onclick="loadModel('truck')">Truck</button>
+            <button onclick="loadModel('motorcycle')">Motorcycle</button>
+        </div>
+
+        <!-- Container for 3D model rendering -->
+        <div id="model-container"></div>
+
+        <!-- Vehicle description panel -->
+        <div id="description">
+            <h3>Vehicle Description</h3>
+            <p id="vehicle-info">Select a vehicle to view details here.</p>
+        </div>
+    </div>
+
+    <!-- Include Three.js and GLTFLoader for model loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+
+    <!-- Link to script.js file -->
+    <script src="script.js"></script>
+</body>
+</html>
